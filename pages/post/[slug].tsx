@@ -32,7 +32,6 @@ function Post({ post }: Props) {
       method: 'POST',
       body: JSON.stringify(data),
     }).then(() => {
-      console.log(data);
       setSubmitted(true);
     }).catch((err => {
       console.log(err);
